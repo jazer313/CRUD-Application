@@ -11,6 +11,11 @@ form.addEventListener("submit", (e) => {
   formValidation();
 });
 
+form.addEventListener("cancel", (e) => {
+  e.preventDefault();
+  formValidation();
+});
+
 let formValidation = () => {
   if (textInput.value === "") {
     console.log("failure");
